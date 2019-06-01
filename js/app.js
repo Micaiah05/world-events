@@ -83,8 +83,20 @@ function randomBook(){
 // use the following image reference:
 // https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjMMBlsYV-Ta5N_GKAoxRDBEa9BRZqdzQRvpiHELEPb6IPVZ73
 
+var newPic = document.getElementsByTagName('img')
+console.log(newPic)
 
+newPic[9].addEventListener('mouseover', changeImage)
 
+function changeImage(){
+
+    if(newPic[9].src = 'https://www.sagu.edu/images/thoughthub/thumbnails/2015/7-Interesting-Features-of-World-War-2-2.jpg'){
+        newPic[9].src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjMMBlsYV-Ta5N_GKAoxRDBEa9BRZqdzQRvpiHELEPb6IPVZ73'
+    }else{
+        newPic[9].src = 'https://www.sagu.edu/images/thoughthub/thumbnails/2015/7-Interesting-Features-of-World-War-2-2.jpg'
+    }
+    
+}
 // 10. The Industrial Revolution
 // Add an event listener to the h3 element and create a function that will reverse the contents in the div element id of 'gameChanger'
 
