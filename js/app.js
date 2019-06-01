@@ -100,8 +100,19 @@ function changeImage(){
 // 10. The Industrial Revolution
 // Add an event listener to the h3 element and create a function that will reverse the contents in the div element id of 'gameChanger'
 
+var h3 = document.getElementsByClassName('title')
 
+h3[9].addEventListener('click', reverseText)
 
+var game = 'The Industrial Revolution was the transition to new manufacturing processes in Europe and the US, in the period from about 1760 to about 1840. This transition included going from hand production methods to machines, new chemical manufacturing and iron production processes, the increasing use of steam power, the development of machine tools and the rise of the factory system.'
+
+function reverseText(){
+    var newList = game.split(' ')
+    var reversedList = newList.reverse()
+    //reversedList.toString()
+    gameChanger.innerHTML = reversedList;
+    
+}
 // Final Boss
 // Add event listeners for the thumbs up and thumbs down images that will count the number of times the thumb has been clicked on. 
 
